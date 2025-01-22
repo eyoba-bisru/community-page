@@ -1,0 +1,21 @@
+@use "../abstracts/variables";
+
+.comment {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: variables.$gap-base;
+  box-shadow: variables.$box-shadow-light;
+
+  .replies {
+    margin-left: variables.$gap-lg;
+
+    .reply {
+      background: variables.$secondary-color;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: variables.$gap-base;
+      box-shadow: variables.$box-shadow-light;
+    }
+  }
+}

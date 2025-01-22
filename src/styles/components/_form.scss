@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+
+.comment-form,
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$gap-base;
+  margin: variables.$gap-lg 0;
+}
+
+.comment-form {
+  button {
+    width: fit-content;
+  }
+}
+
+textarea,
+input {
+  padding: 12px;
+  font-size: variables.$font-size-base;
+  border: 1px solid variables.$border-color;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: variables.$primary-color;
+    outline: none;
+  }
+}
+
+button {
+  background-color: variables.$primary-color;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: variables.$button-hover-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

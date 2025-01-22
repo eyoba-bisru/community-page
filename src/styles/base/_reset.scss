@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+// Reset styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  background-color: #fafafa;
+  line-height: 1.6;
+}

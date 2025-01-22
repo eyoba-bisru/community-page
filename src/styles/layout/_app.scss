@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: variables.$padding-lg;
+  border: 2px solid variables.$border-color;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: variables.$primary-color;
+  margin-bottom: variables.$gap-lg;
+}
